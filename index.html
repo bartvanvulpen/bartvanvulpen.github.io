@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gokgarant.nl Waiting List</title>
+    <title>GokGarant</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         .floating-label {
@@ -33,27 +33,33 @@
 </head>
 <body class="bg-gray-200 h-screen flex items-center justify-center">
 
-    <!-- Material Design Card -->
-    <div class="bg-white p-4 md:p-16 mx-4 md:mx-0 rounded-lg shadow-md w-full max-w-xl h-auto flex flex-col items-center justify-between">
-        <!-- Logo -->
-        <div class="mb-4 text-center w-full">
-            <!-- Replace with your actual logo -->
-            <img src="path_to_your_logo.png" alt="Gokgarant.nl Logo" class="mx-auto h-16 md:h-20">
-        </div>
-
-        <!-- Heading Text -->
-        <h2 class="text-center text-xl md:text-xl mb-2 w-full">Schrijf je nu in voor de wachtlijst van GokGarant!</h2>
-
-        <!-- Subtext -->
-        <p class="text-center text-gray-500 mb-6 w-full">Wees de eerste die gegarandeerd winst maakt met surebets!</p>
-
-        <!-- Email Input with Submit Button -->
-        <div class="relative w-full floating-label">
-            <input type="email" placeholder="Jouw e-mailadres" class="px-4 py-2 w-full rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500 pr-28 md:pr-20">
-
-            <button type="submit" class="absolute right-0 top-0 px-4 py-2 w-28 md:w-24 h-full rounded-md bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:bg-blue-600 flex items-center justify-center">Verzend</button>
-        </div>
+<!-- Material Design Card -->
+<div class="bg-white p-6 md:p-16 mx-4 md:mx-0 rounded-lg shadow-md w-full max-w-xl h-auto flex flex-col items-center justify-between">
+    <!-- Logo -->
+    <div class="mb-4 text-center w-full">
+        <!-- Replace with your actual logo -->
+        <img src="path_to_your_logo.png" alt="Gokgarant.nl Logo" class="mx-auto h-16 md:h-20">
     </div>
+
+    <!-- Heading Text -->
+    <h2 class="text-center text-xl md:text-xl mb-2 w-full">Schrijf je nu in voor de wachtlijst van GokGarant!</h2>
+
+    <!-- Subtext -->
+    <p class="text-center text-gray-500 mb-6 w-full">Wees de eerste die gegarandeerd winst maakt met surebets!</p>
+
+    <!-- Email Input with Submit Button -->
+    <div class="relative w-full floating-label">
+        <form action="https://formspree.io/f/mwkdblow" method="POST">
+            <input type="email" name="email" placeholder="Jouw e-mailadres"
+                   class="px-4 py-2 w-full rounded-md border border-gray-300 focus:outline-none focus:border-indigo-500 pr-28 md:pr-20">
+
+            <button type="submit"
+                    class="absolute right-0 top-0 px-4 py-2 w-20 md:w-24 h-full rounded-md bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:bg-blue-600 flex items-center justify-center">
+                Verzend
+            </button>
+        </form>
+    </div>
+</div>
 
 </body>
 </html>
