@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success - GokGarant</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .floating-label {
+            position: relative;
+        }
+
+        .floating-label input:focus ~ label,
+        .floating-label input:not(:placeholder-shown) ~ label {
+            top: -8px;
+            left: 10px;
+            background-color: white;
+            padding: 0 0.25rem;
+            font-size: 12px;
+        }
+
+        .floating-label label {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            padding: 0 0.5rem;
+            transition: all 0.2s;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-200 h-screen flex items-center justify-center">
+    <!-- Material Design Card -->
+    <div class="bg-white p-6 md:p-16 mx-4 md:mx-0 rounded-lg shadow-md w-full max-w-xl h-auto flex flex-col items-center justify-between">
+        <!-- Message -->
+        <h2 class="text-center text-xl md:text-2xl mb-2 w-full">
+            Je bent succesvol ingeschreven voor de wachtlijst van GokGarant, bedankt!
+        </h2>
+    </div>
+</body>
+
+</html>
